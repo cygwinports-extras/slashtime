@@ -1,0 +1,7 @@
+category: Utils
+requires: jamvm java-gnome4.0
+sdesc: "World clock tray icon"
+ldesc: "Slashtime is a small program which displays the time in various 
+places. It has a compact display of locations along with supporting 
+information such as the date and the abbreviated code used to name that 
+timezone."

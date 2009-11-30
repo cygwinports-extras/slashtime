@@ -1,0 +1,45 @@
+slashtime
+------------------------------------------
+Slashtime is a small program which displays the time in various places. 
+It has a compact display of locations along with supporting information 
+such as the date and the abbreviated code used to name that timezone.
+
+Runtime requirements:
+  jamvm-1.5.3-1
+  java-gnome4.0-4.0.13-1  
+
+Build requirements:
+  ant-1.7.1-1
+  binutils-2.19.51-1
+  cygport-0.9.10-1
+  make-3.81-2
+
+Canonical website:
+  http://research.operationaldynamics.com/projects/slashtime/
+
+Canonical download:
+  http://research.operationaldynamics.com/projects/slashtime/dist/
+
+-------------------------------------------
+
+Build instructions:
+  unpack slashtime-0.5.10-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./slashtime-0.5.10-X.cygport all
+
+This will create:
+  /usr/src/slashtime-0.5.10-X-src.tar.bz2
+  /usr/src/slashtime-0.5.10-X.tar.bz2
+
+-------------------------------------------
+
+Port Notes:
+
+----- version 0.5.10-1 -----
+Initial release for Cygwin 1.7.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/
