@@ -6,10 +6,9 @@ such as the date and the abbreviated code used to name that timezone.
 
 Runtime requirements:
   jamvm-1.5.3-1
-  java-gnome4.0-4.0.13-1  
+  java-gnome4.0-4.0.14-1
 
 Build requirements:
-  ant-1.7.1-1
   binutils-2.19.51-1
   cygport-0.9.10-1
   make-3.81-2
@@ -23,21 +22,21 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack slashtime-0.5.10-X-src.tar.bz2
+  unpack slashtime-0.5.11-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./slashtime-0.5.10-X.cygport all
+  cygport ./slashtime-0.5.11-X.cygport all
 
 This will create:
-  /usr/src/slashtime-0.5.10-X-src.tar.bz2
-  /usr/src/slashtime-0.5.10-X.tar.bz2
+  /usr/src/slashtime-0.5.11-X-src.tar.bz2
+  /usr/src/slashtime-0.5.11-X.tar.bz2
 
 -------------------------------------------
 
 Port Notes:
 
------ version 0.5.10-1 -----
+----- version 0.5.11-1 -----
 Initial release for Cygwin 1.7.
 
 
