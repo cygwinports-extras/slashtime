@@ -36,6 +36,9 @@ This will create:
 
 Port Notes:
 
+----- version 0.5.11-2 -----
+Added patch to accept "--hidden" argument to start minimized on tray.
+
 ----- version 0.5.11-1 -----
 Initial release for Cygwin 1.7.
 
