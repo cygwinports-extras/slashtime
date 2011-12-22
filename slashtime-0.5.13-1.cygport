@@ -1,6 +1,6 @@
 inherit java
 
-DESCRIPTION="World clock tray icon"
+DESCRIPTION="GTK+ world clock"
 HOMEPAGE="http://research.operationaldynamics.com/projects/slashtime/"
 SRC_URI="http://research.operationaldynamics.com/projects/slashtime/dist/${P}.tar.bz2"
 
@@ -9,7 +9,7 @@ MAKEOPTS+=" -j1"
 myconfigure() {
 	cat > .config <<_EOF
 OS=cygwin
-JAVAGNOME_JARS=${JAVA_DIR}/gtk-4.0.jar
+JAVAGNOME_JARS=${JAVA_DIR}/gtk-4.1.jar
 JAVAC=${JAVAC} -nowarn -source 1.5 -target 1.5
 JAVAC_CMD=JAVAC
 JAR=${JAR}
@@ -23,13 +23,13 @@ _EOF
 	mkdir -p tmp/launcher
 	cat > tmp/launcher/${PN}-local <<_EOF
 #! /bin/sh
-exec ${JAVA} -classpath tmp/classes:${JAVA_DIR}/gtk-4.0.jar slashtime.client.Master \$*
+exec ${JAVA} -classpath tmp/classes:${JAVA_DIR}/gtk-4.1.jar slashtime.client.Master \$*
 _EOF
 
 	cat > tmp/launcher/${PN}-install <<_EOF
 #! /bin/sh
 cd /usr
-exec ${JAVA} -classpath ${JAVA_DIR}/${PN}-${PV_MAJ_MIN}.jar:${JAVA_DIR}/gtk-4.0.jar slashtime.client.Master \$*
+exec ${JAVA} -classpath ${JAVA_DIR}/${PN}-${PV_MAJ_MIN}.jar:${JAVA_DIR}/gtk-4.1.jar slashtime.client.Master \$*
 _EOF
 
 	cat > tmp/launcher/${PN}.desktop <<_EOF
@@ -41,8 +41,8 @@ GenericName="Time Zones"
 Comment=View the time at locations around the world
 Categories=GNOME;GTK;Utility;
 Path=/usr
-Exec=slashtime
-Icon=/usr/share/pixmaps/slashtime-marble.png
+Exec=/usr/bin/slashtime
+Icon=slashtime
 _EOF
 }
 
